@@ -1,0 +1,44 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Retail Sample Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Retail Sample Store</h1>
+    <div class="cart-badge" id="cartBadge" aria-label="Items in cart">0</div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Products</h2>
+      <div id="products" class="grid"></div>
+    </section>
+
+    <aside class="cart">
+      <h2>Your Cart</h2>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-summary">
+        <div class="row">
+          <span>Items:</span><span id="cartCount">0</span>
+        </div>
+        <div class="row">
+          <span>Total:</span><span id="cartTotal">₹0.00</span>
+        </div>
+        <button id="checkoutBtn" class="btn btn-primary">Checkout (Simulated)</button>
+        <button id="clearCartBtn" class="btn btn-secondary">Clear Cart</button>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <small>Sample app for AWS Apache deployment (Amazon Linux)</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
